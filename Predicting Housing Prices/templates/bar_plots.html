@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tag -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Uniland - Real Estate Template">
+    <meta name="keywords" content="real estate, property, property search, agent, apartments, booking, business, idx, housing, real estate agency, rental">
+    <meta name="author" content="unicoder">
+    <title>EDA</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="static/images/favicon.ico">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+    <!-- CSS Style -->
+    <link rel="stylesheet" href="static/css/bootstrap.min.css">
+    <link rel="stylesheet" href="static/css/all.min.css">
+    <link rel="stylesheet" href="static/css/animate.min.css">
+    <link rel="stylesheet" href="static/webfonts/flaticon/flaticon.css">
+    <link rel="stylesheet" href="static/css/owl.css">
+    <link rel="stylesheet" href="static/css/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="static/css/layerslider.css">
+    <link rel="stylesheet" href="static/css/template.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/colors/landing-page.css">
+
+    <style>
+        .image-section {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .image-section .image-container {
+            flex: 0 0 48%;
+            margin-bottom: 2%;
+        }
+        .image-section img {
+            width: 100%;
+            height: auto;
+        }
+    </style>
+
+</head>
+
+<body class="bg-light">
+<!-- Header Section Start -->
+<header class="line-separate-header bg-secondary fixed-bg-secondary nav-on-banner">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg nav-white nav-dropdown-white nav-primary-hover nav-primary-hover py-2">
+                    <div class="container-fluid">
+                        <a class="navbar-brand" href="/" style="width: 160px"><img class="nav-logo" src="static/images/logo/dash-logo.png" alt="Logo"></a>
+                        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <i class="navbar-toggler-icon flaticon-menu flat-small text-white"></i>
+                        </button>
+                        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav one-page-nav mx-auto">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="/About_us">About Us</a>
+                                </li>
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="/">EDA Plots</a>
+                                    <ul class="dropdown-menu">
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle dropdown-item" href="/">Univariate</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/eda">Histograms</a></li>
+                                                <li><a class="dropdown-item" href="/eda_barplots">Bar plots</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle dropdown-item" href="/">Bivariate</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/bivariate">Scatter plots</a></li>
+                                            </ul>
+                                        </li>
+                                        <li class="dropdown">
+                                            <a class="dropdown-toggle dropdown-item" href="/">Multivariate</a>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="/multivariate">Scatter plot with 3rd variable</a></li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- Header Section End -->
+
+<div class="full-row bg-light">
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-8 col-md-10 text-center">
+                <h1 class="text-secondary">Bar Plots</h1>
+                <p class="mt-4 d-block font-18">
+                    <h5>Below are bar plots displaying the frequencies for each categorical feature. These visualizations help us understand the distribution, central tendency, and spread of the data for key variables such as watefront options, view ratings, zipcode, and more. By examining these bar plots, we can identify patterns, outliers, and potential skewness in the data, which are essential for further analysis and modeling.</h5>
+                </p>
+                 <!-- Image Section Start -->
+ <div class="image-section">
+    <div class="image-container">
+        <img src="static/images/bar_plots/waterfront.png" alt="Price Distribution Histogram" class="img-fluid">
+    </div>
+    <div class="image-container">
+        <img src="static/images/bar_plots/view.png" alt="Bedrooms Distribution Histogram" class="img-fluid">
+    </div>
+    <div class="image-container">
+        <img src="static/images/bar_plots/renovation.png" alt="Bathrooms Distribution Histogram" class="img-fluid">
+    </div>
+    <div class="image-container">
+        <img src="static/images/bar_plots/zipcode.png" alt="Floors Distribution Histogram" class="img-fluid">
+    </div>
+</div>
+<!-- Image Section End -->
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

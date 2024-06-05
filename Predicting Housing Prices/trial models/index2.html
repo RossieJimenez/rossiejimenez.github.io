@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Tag and other head content here -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>House Price Prediction</title>
+
+    <!-- Bootstrap CSS and other stylesheets here -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body class="bg-light">
+
+    <!-- Full Row for Title and Description -->
+    <div class="full-row bg-light">
+        <div class="container">
+            <!-- Centered Title and Description -->
+            <div class="row justify-content-center mb-5">
+                <div class="col-lg-6 col-md-8 text-center">
+                    <h2 class="text-secondary">Home Features</h2>
+                    <span class="mt-4 d-block font-18">Select the features of your home below:</span>
+                </div>
+            </div>
+
+            <!-- Feature Columns with Increased Spacing -->
+            <form action="/" method="post">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Bedrooms Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="bedrooms" class="form-label">Bedrooms:</label>
+                            <div class="form-group">
+                                <select class="form-control form-control-sm" id="bedrooms" name="bedrooms">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8+">8+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Bathrooms Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="bathrooms" class="form-label">Bathrooms:</label>
+                            <div class="form-group">
+                                <select class="form-control form-control-sm" id="bathrooms" name="bathrooms">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                    <option value="7">7</option>
+                                    <option value="8+">8+</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Floors Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="floors" class="form-label">Floors:</label>
+                            <div class="form-group">
+                                <select class="form-control form-control-sm" id="floors" name="floors">
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Sqft Living Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="sqft_living" class="form-label">Sqft Living:</label>
+                            <div class="form-group">
+                                <input type="number" class="form-control form-control-sm" id="sqft_living" name="sqft_living" min="384" max="13540" placeholder="Enter square footage">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Waterfront Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="waterfront" class="form-label">Waterfront:</label>
+                            <div class="form-group">
+                                <select class="form-control form-control-sm" id="waterfront" name="waterfront">
+                                    <option value="1">Yes</option>
+                                    <option value="0">No</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- View Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="view" class="form-label">View:</label>
+                            <input type="range" class="form-range" id="view" name="view" min="1" max="4" step="1">
+                        </div>
+                    </div>
+
+                    <!-- Year Built Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="yr_built" class="form-label">Year Built:</label>
+                            <input type="number" class="form-control form-control-sm" id="yr_built" name="yr_built" min="1900" max="2022" placeholder="Enter year built">
+                        </div>
+                    </div>
+
+                    <!-- Zipcode Column -->
+                    <div class="col">
+                        <div class="p-4 bg-white text-center mb-4">
+                            <label for="zipcode" class="form-label">Zipcode:</label>
+                            <select class="form-control form-control-sm" id="zipcode" name="zipcode">
+                                <option value="98001">98001</option>
+                                <option value="98002">98002</option>
+                                <option value="98003">98003</option>
+                                <option value="98004">98004</option>
+                                <option value="98005">98005</option>
+                                <option value="98006">98006</option>
+                                <option value="98007">98007</option>
+                                <option value="98008">98008</option>
+                                <option value="98010">98010</option>
+                                <option value="98011">98011</option>
+                                <option value="98014">98014</option>
+                                <option value="98019">98019</option>
+                                <option value="98022">98022</option>
+                                <option value="98023">98023</option>
+                                <option value="98024">98024</option>
+                                <option value="98027">98027</option>
+                                <option value="98028">98028</option>
+                                <option value="98029">98029</option>
+                                <option value="98030">98030</option>
+                                <option value="98031">98031</option>
+                                <option value="98032">98032</option>
+                                <option value="98033">98033</option>
+                                <option value="98034">98034</option>
+                                <option value="98038">98038</option>
+                                <option value="98039">98039</option>
+                                <option value="98040">98040</option>
+                                <option value="98042">98042</option>
+                                <option value="98045">98045</option>
+                                <option value="98052">98052</option>
+                                <option value="98053">98053</option>
+                                <option value="98055">98055</option>
+                                <option value="98056">98056</option>
+                                <option value="98058">98058</option>
+                                <option value="98059">98059</option>
+                                <option value="98065">98065</option>
+                                <option value="98070">98070</option>
+                                <option value="98072">98072</option>
+                                <option value="98074">98074</option>
+                                <option value="98075">98075</option>
+                                <option value="98077">98077</option>
+                                <option value="98092">98092</option>
+                                <option value="98102">98102</option>
+                                <option value="98103">98103</option>
+                                <option value="98105">98105</option>
+                                <option value="98106">98106</option>
+                                <option value="98107">98107</option>
+                                <option value="98108">98108</option>
+                                <option value="98109">98109</option>
+                                <option value="98112">98112</option>
+                                <option value="98115">98115</option>
+                                <option value="98116">98116</option>
+                                <option value="98117">98117</option>
+                                <option value="98118">98118</option>
+                                <option value="98119">98119</option>
+                                <option value="98122">98122</option>
+                                <option value="98125">98125</option>
+                                <option value="98126">98126</option>
+                                <option value="98133">98133</option>
+                                <option value="98136">98136</option>
+                                <option value="98144">98144</option>
+                                <option value="98146">98146</option>
+                                <option value="98148">98148</option>
+                                <option value="98155">98155</option>
+                                <option value="98166">98166</option>
+                                <option value="98168">98168</option>
+                                <option value="98177">98177</option>
+                                <option value="98178">98178</option>
+                                <option value="98188">98188</option>
+                                <option value="98198">98198</option>
+                                <option value="98199">98199</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Predict Button -->
+                <div class="row justify-content-center mt-4">
+                    <div class="col-lg-4 text-center">
+                        <button type="submit" class="btn btn-primary btn-lg">Predict!</button>
+                    </div>
+                </div>
+            </form>
+
+            <!-- Display Prediction Result -->
+            {% if prediction %}
+            <div class="row justify-content-center mt-4">
+                <div class="col-lg-6 col-md-8 text-center">
+                    <h4 class="text-secondary">Predicted Home Price:</h4>
+                    <p class="font-weight-bold">${{ prediction }}</p>
+                </div>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS and other scripts here -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
