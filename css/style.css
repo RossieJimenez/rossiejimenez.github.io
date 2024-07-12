@@ -108,7 +108,8 @@ hr {
 .navbar-custom .nav li a {
 	margin: 1 60px;
 	text-transform: uppercase;
-	letter-spacing: px;
+	letter-spacing: 0.5px;
+	font-size: 15.5px;
 	-webkit-transition: background .3s ease-in-out;
 	-moz-transition: background .3s ease-in-out;
 	transition: background .3s ease-in-out;
@@ -178,13 +179,13 @@ hr {
 	color: #333;
 }
 .intro p {
-	font-size: 20px;
+	font-size: 22px;
 	margin-bottom: 40px;
 	margin-top: 20px;
 }
 header .intro-text {
 	padding-top: 200px;
-	padding-bottom: 100px;
+	padding-bottom: 80px;
 }
 
 
@@ -194,7 +195,7 @@ header .intro-text {
 }
 #about .about-text {
 	font-size: 16px;
-	margin-left: 50px;
+	margin-left: 20px;
 	text-align: left;
 }
 /* #about img {
@@ -204,8 +205,8 @@ header .intro-text {
 	display: inline-block;
 } */
 #about p {
-	margin-top: 10px;
-	margin-bottom: 60px;
+	margin-top: 20px;
+	margin-bottom: 50px;
 	line-height: 22px;
 }
 
@@ -353,7 +354,7 @@ header .intro-text {
 
 /* Project section */
 #projects {
-  background: #e9ecef;
+  background: #ffffff;
   padding: 50px 0;
 }
 
@@ -387,39 +388,48 @@ header .intro-text {
 
 
 
-
+/* Styles for Skills Section */
+#skills .skills-list {
+    display: flex; /* Use flexbox to arrange items horizontally */
+    flex-wrap: wrap; /* Allow items to wrap to the next line if needed */
+    justify-content: center; /* Center the items */
+    gap: 15px; /* Add space between items */
+    font-size: 16px; /* Adjust font size as needed */
+}
 
 
 /* Skills section */
 #skills {
-	background: #f9f9f9;
+	background: #ffffff;
 	padding: 50px 0;
-  }
+}
   
-  #skills .skill-item {
+#skills .skill-item {
 	background: #fff;
 	padding: 20px;
 	margin-bottom: 20px;
 	border: 1px solid #ddd;
 	border-radius: 5px;
-  }
+}
   
-  #skills .skill-item h3 {
+#skills .skill-item h3 {
 	font-size: 24px;
 	margin: 0 0 10px;
-  }
+}
   
-  #skills .skill-item .description {
+#skills .skill-item .description {
 	font-size: 16px;
 	margin: 0;
-  }
-  
+}
+
 
 
 
 /* Contact Section */
 #contact {
-	padding: 120px 0 60px 0;
+	padding: 20px 0 60px 0;
+	margin-bottom: 2px;
+	
 }
 #contact h3 {
 	padding-top: 20px;
@@ -464,23 +474,29 @@ label {
 	box-shadow: transparent;
 }
 .form-control::-webkit-input-placeholder {
-color: #2c3e50;
+	color: #2c3e50;
 }
 .form-control:-moz-placeholder {
-color: #2c3e50;
+	color: #2c3e50;
 }
 .form-control::-moz-placeholder {
-color: #2c3e50;
+	color: #2c3e50;
 }
 .form-control:-ms-input-placeholder {
-color: #2c3e50;
+	color: #2c3e50;
 }
+
+
+/* Social icons */
 #contact .social {
-	margin-top: 80px;
+    margin-top: 2px; /* Adjusted margin-top for spacing */
+}
+#contact .social ul {
+    text-align: center; /* Ensures the icons are centered horizontally */
 }
 #contact .social ul li {
 	display: inline-block;
-	margin: 0 20px;
+	margin: 0 5px;
 }
 #contact .social i.fa {
 	font-size: 22px;
@@ -501,18 +517,5 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline: none;
 	outline-offset: none;
 }
-/* Footer Section*/
-#footer {
-	background: #f6f6f6;
-	color: #777;
-	padding: 30px 0 25px 0;
-}
-#footer p {
-	font-size: 13px;
-}
-#footer a {
-	color: #555;
-}
-#footer a:hover {
-	color: #000;
-}
+
+
